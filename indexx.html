@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>HELLO BY TJ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
+    <!-- Intro -->
+    <div id="intro">
+        <h1>hello, Riya<br /></h1>
+        <h1>Play the song first.<br /></h1>
+        <div id="music-container" style="text-align: center;">
+            <audio id="music" preload="auto" loop>
+                <source src="loverrr.mp3" type="audio/mpeg">
+            </audio>
+            <button id="play-button" onclick="togglePlayPause()">Play</button>
+        </div>
+        <p>I got a surprise for you. Click on the arrow when she starts to sing.</p>
+        <ul class="actions">
+            <li><a href="generic.html" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">gg</a>
+    </header>
+
+    <!-- Nav -->
+
+    <!-- Fireworks Canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Music Player with Play Button -->
+ 
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul>
+            <li>&copy; T.J.K</li>
+            <li>Right Reserved by: <a href="https://www.instagram.com/tapash_j_kunwar/">Tapash.J.Kunwar</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    function togglePlayPause() {
+        var music = document.getElementById('music');
+        var playButton = document.getElementById('play-button');
+
+        if (music.paused) {
+            music.play();
+            playButton.textContent = "Pause";
+        } else {
+            music.pause();
+            playButton.textContent = "Play";
+        }
+    }
+</script>
+</body>
+</html>
